@@ -1,0 +1,36 @@
+➜  tsp git:(main) hyperfine -r 100 'python tsp/nearest_neighbor.py <inputs/253.txt' 'python tsp/held_karp.py <inputs/253.txt'
+Benchmark 1: python tsp/nearest_neighbor.py <inputs/253.txt
+  Time (mean ± σ):      25.6 ms ±   1.2 ms    [User: 16.2 ms, System: 7.1 ms]
+  Range (min … max):    23.6 ms …  30.8 ms    100 runs
+
+Benchmark 2: python tsp/held_karp.py <inputs/253.txt
+  Time (mean ± σ):      32.6 ms ±   1.1 ms    [User: 22.9 ms, System: 7.3 ms]
+  Range (min … max):    30.8 ms …  37.9 ms    100 runs
+
+Summary
+  python tsp/nearest_neighbor.py <inputs/253.txt ran
+    1.27 ± 0.07 times faster than python tsp/held_karp.py <inputs/253.txt
+➜  tsp git:(main) hyperfine -r 100 'python tsp/nearest_neighbor.py <inputs/1194.txt' 'python tsp/held_karp.py <inputs/1194.txt'
+Benchmark 1: python tsp/nearest_neighbor.py <inputs/1194.txt
+  Time (mean ± σ):      25.8 ms ±   2.2 ms    [User: 16.4 ms, System: 7.1 ms]
+  Range (min … max):    23.9 ms …  37.9 ms    100 runs
+
+Benchmark 2: python tsp/held_karp.py <inputs/1194.txt
+  Time (mean ± σ):     240.9 ms ±  11.0 ms    [User: 222.6 ms, System: 15.0 ms]
+  Range (min … max):   224.2 ms … 290.7 ms    100 runs
+
+Summary
+  python tsp/nearest_neighbor.py <inputs/1194.txt ran
+    9.33 ± 0.92 times faster than python tsp/held_karp.py <inputs/1194.txt
+➜  tsp git:(main) hyperfine -r 100 'python tsp/nearest_neighbor.py <inputs/1248.txt' 'python tsp/held_karp.py <inputs/1248.txt'
+Benchmark 1: python tsp/nearest_neighbor.py <inputs/1248.txt
+  Time (mean ± σ):      26.4 ms ±   2.1 ms    [User: 16.8 ms, System: 7.1 ms]
+  Range (min … max):    23.6 ms …  35.2 ms    100 runs
+
+Benchmark 2: python tsp/held_karp.py <inputs/1248.txt
+  Time (mean ± σ):      26.3 ms ±   2.2 ms    [User: 17.0 ms, System: 6.9 ms]
+  Range (min … max):    24.1 ms …  36.7 ms    100 runs
+
+Summary
+  python tsp/held_karp.py <inputs/1248.txt ran
+    1.00 ± 0.12 times faster than python tsp/nearest_neighbor.py <inputs/1248.txt

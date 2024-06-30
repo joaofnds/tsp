@@ -1,0 +1,14 @@
+[project]
+name = "tsp"
+version = "0.0.1"
+requires-python = ">= 3.12"
+dependencies = ["ruff"]
+
+[tool.setuptools]
+packages = ["tsp"]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+extend-select = ["I"]
