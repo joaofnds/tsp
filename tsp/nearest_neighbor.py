@@ -7,7 +7,7 @@ def nearest_neighbor(dists: list[list[int]]):
     unvisited = list(range(1, len(dists)))
     tour = [0]
     while unvisited:
-        nearest = min(unvisited, key=lambda x: dists[tour[-1]][x])
+        nearest = min(unvisited, key=lambda i: dists[tour[-1]][i])
         tour.append(nearest)
         unvisited.remove(nearest)
     tour.append(0)
